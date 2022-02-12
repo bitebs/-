@@ -1,0 +1,886 @@
+{
+	"info": {
+		"_postman_id": "a39e3753-1e16-4d31-8839-859e0ab2e38d",
+		"name": "HomeWork8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "List Active coupon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/coupons",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"coupons"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create coupon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<coupon>\r\n  <coupon_code>special</coupon_code>\r\n  <name>Special $2 off coupon</name>\r\n  <discount_type>dollars</discount_type>\r\n    <discount_in_cents>\r\n    <USD>200</USD>\r\n  </discount_in_cents>\r\n  <redeem_by_date>2022-03-31</redeem_by_date>\r\n  <duration>temporal</duration>\r\n  <temporal_unit>day</temporal_unit>\r\n  <temporal_amount>28</temporal_amount>\r\n  <max_redemptions>200</max_redemptions>\r\n  <max_redemptions_per_account>1</max_redemptions_per_account>\r\n  <applies_to_all_plans>true</applies_to_all_plans>\r\n</coupon>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/coupons",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"coupons"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lookup a coupon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/coupons/special",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"coupons",
+								"special"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "expire coupon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/coupons/special",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"coupons",
+								"special"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit coupon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/coupons/special",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"coupons",
+								"special"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "measure units",
+			"item": [
+				{
+					"name": "list measure units",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/measured_units",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"measured_units"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create measured unit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<measured_unit>\r\n  <name>Streaming Bandwidth</name>\r\n  <display_name>GB</display_name>\r\n  <description>Video steaming bandwidth measured in gigabytes</description>\r\n</measured_unit>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/measured_units",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"measured_units"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lookup measured unit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/measured_units/3471323164399924480",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"measured_units",
+								"3471323164399924480"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update measured unit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<measured_unit>\r\n  <display_name>Gigabyte</display_name>\r\n</measured_unit>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/measured_units/3471323164399924480",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"measured_units",
+								"3471323164399924480"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete measured unit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/measured_units/3471323164399924480",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"measured_units",
+								"3471323164399924480"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "plans Add-Ons",
+			"item": [
+				{
+					"name": "list Add-Ons in plan",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/plans/gold/add_ons",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"plans",
+								"gold",
+								"add_ons"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a plan Add-Ons",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<add_on>\r\n  <add_on_code>ipaddresses</add_on_code>\r\n  <name>Extra IP Addresses</name>\r\n  <unit_amount_in_cents>\r\n    <USD>200</USD>\r\n  </unit_amount_in_cents>\r\n</add_on>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/plans/gold/add_ons",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"plans",
+								"gold",
+								"add_ons"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lookup a plan Add-on",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/plans/gold/add_ons/ipaddresses",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"plans",
+								"gold",
+								"add_ons",
+								"ipaddresses"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a plan Add-on",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<add_on>\r\n  <unit_amount_in_cents>\r\n    <USD>1200</USD>\r\n  </unit_amount_in_cents>\r\n</add_on>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/plans/gold/add_ons/ipaddresses",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"plans",
+								"gold",
+								"add_ons",
+								"ipaddresses"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a plan Add-on",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YjZjYWQ1ZjFlMDQzNDRmYjgwMjc1MGIzNGYyOTZiYTg6",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://new21.eu.recurly.com/v2/plans/gold/add_ons/ipaddresses",
+							"protocol": "https",
+							"host": [
+								"new21",
+								"eu",
+								"recurly",
+								"com"
+							],
+							"path": [
+								"v2",
+								"plans",
+								"gold",
+								"add_ons",
+								"ipaddresses"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
