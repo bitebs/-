@@ -1,0 +1,350 @@
+гк@PC11-CAB3 MINGW64 ~
+$ git --version
+git version 2.33.1.windows.1
+
+гк@PC11-CAB3 MINGW64 ~
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+гк@PC11-CAB3 MINGW64 ~
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+гк@PC11-CAB3 MINGW64 ~
+$ git config --global user.name bitebs
+
+гк@PC11-CAB3 MINGW64 ~
+$ git config --global user.name
+bitebs
+
+гк@PC11-CAB3 MINGW64 ~
+$ git config --global user.email Bitebs21@gmail.com
+
+гк@PC11-CAB3 MINGW64 ~
+$ git config --global user.email
+Bitebs21@gmail.com
+
+гк@PC11-CAB3 MINGW64 ~
+$ pwd
+/c/Users/гк
+
+гк@PC11-CAB3 MINGW64 ~
+$ cd D:/гк/github
+
+гк@PC11-CAB3 MINGW64 /d/гк/github
+$ pwd
+/d/гк/github
+
+гк@PC11-CAB3 MINGW64 /d/гк/github
+$ git init
+Initialized empty Git repository in D:/гк/github/.git/
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git add .
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "v.1.0
+> git commit -m "v.1.0"
+>
+>
+> m
+> ^C
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "v.1.0"
+[master (root-commit) 02a3584] v.1.0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git remote add origin https://github.com/bitebs/-
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git ls-files
+file.txt
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ gitk
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "C0"
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ gitk commit -m "C0"
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "C0"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git add file.txt
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "C0"
+[master d24c5f1] C0
+ 1 file changed, 1 insertion(+)
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git log
+commit d24c5f13583a2067dad325216197e109b802b766 (HEAD -> master)
+Author: bitebs <Bitebs21@gmail.com>
+Date:   Fri Feb 18 19:28:31 2022 +0300
+
+    C0
+
+commit 02a35848a45f8231fe52c5dfb54c25f6b099f21a
+Author: bitebs <Bitebs21@gmail.com>
+Date:   Fri Feb 18 19:00:06 2022 +0300
+
+    v.1.0
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git shortlog
+bitebs (2):
+      v.1.0
+      C0
+
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "C1"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "C1"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git add .
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git commit -m "C1"
+[master bd56d70] C1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git shortlog
+bitebs (3):
+      v.1.0
+      C0
+      C1
+
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ gitk
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git checkout -b iss1
+Switched to a new branch 'iss1'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (iss1)
+$ gitk
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (hotfix)
+$ git add .
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (hotfix)
+$ git commit -m "hotfix"
+[hotfix 23d0adc] hotfix
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (hotfix)
+$ gitk
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (hotfix)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git merge hotfix
+Updating bd56d70..23d0adc
+Fast-forward
+ file.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ gitk
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git checkout iss1
+Switched to branch 'iss1'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git branch -d hotfix
+Deleted branch hotfix (was 23d0adc).
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git checkout iss1
+Switched to branch 'iss1'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (iss1)
+$ git commit -a -m "iss1"
+[iss1 3ed978e] iss1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (iss1)
+$ gitk
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ git merge iss1
+Auto-merging file.txt
+CONFLICT (content): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master|MERGING)
+$ cat file.txt
+<<<<<<< HEAD
+hotfix
+=======
+iss1
+>>>>>>> iss1
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master|MERGING)
+$ git commit -m "v.2.0"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       file.txt
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master|MERGING)
+$ git commit -a -m "v.2.0"
+[master 87d7c1a] v.2.0
+
+гк@PC11-CAB3 MINGW64 /d/гк/github (master)
+$ gitk
+
