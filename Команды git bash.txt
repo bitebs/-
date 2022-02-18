@@ -1,0 +1,59 @@
+Получить текущий каталог
+pwd
+
+Перейти в выбранный каталог
+cd h:/gitbash
+
+Создать репозиторий в текущем каталоге
+git init
+
+Узнать состояние репозитория
+git status
+
+Добавить файл в репозиторий
+git add "Команды git bash.txt"
+
+Фиксация изменений в репозитории
+git commit -m "Help for git commands"
+
+Добавить все текстовые файлы
+git add *.txt
+
+git commit
+
+Редактор vi:
+Сохранить и выйти
+:w:q
+
+Показать историю изменений
+git log
+
+Изменить пользователя в текущем репозитории
+git config user.name KirillovItstep
+
+Изменить пользователя в глобальных настройках
+git config --global user.name KirillovItstep
+git config --global user.email kirillov.malp@gmail.com
+
+Посмотреть все настройки
+git config --list
+
+Выполнить клонирование каталога из github
+cd clone
+git clone https://github.com/KirillovItstep/sampleAPI1
+
+Посмотреть текущую ветку
+git branch
+
+Сохранить на github
+git push https://github.com/KirillovItstep/sampleAPI1 master
+
+Узнать о последних изменениях в репозитории
+git diff
+
+git fetch https://github.com/KirillovItstep/sampleAPI1 master
+
+Создать ветку
+git branch new_branch
+
+
